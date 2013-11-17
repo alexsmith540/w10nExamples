@@ -32,14 +32,16 @@
  -->
      <div class="howdowedothis">
         <p>Controls: Click & drag to rotate, mouse wheel to zoom. Try the terrain view and alternate palettes.</p>
+        <br />
+         And if you feel like stressing your browser, I put together a dashboard of a few bands <a href="typhoon_dash.html">here</a>.
+         <br />
          The data in this particular example (despite displaying "backward") was found using an event browser prototype that I've been finishing up. In the perfect world, all <a href="http://en.wikipedia.org/wiki/Distributed_Active_Archive_Center">DAAC</a>'s wrap their datasets in a JPL developed technology called Webification (w10n) to allow data exposure via a well formed URL (see <a href="http://podaac-w10n.jpl.nasa.gov">http://podaac-w10n.jpl.nasa.gov</a>).
          <br />
          <img style="width:600px;" src="img/typhoon-dc.jpg" alt="typhoon image" />
          <br />
          Since I had a w10n Amazon Cloud Machine (sweet, I made an AMI: ami-a84dd698) running webification + NCAR Command Language binaries, I could not resist plugging in the raw data into my visualization-as-a-service widgets. If you look at the embed syntax below, the 3d widget is populated in the website straight from any data source's webified netcdf files, in this case subsetting inside of it and steppting through every 5th value. 
          <br /><br />All that and more, embedded in 2 lines of code in any website. In fact, the very same syntax that is driving this page is below.
-         <br /><br />
-         And if you feel like stressing your browser, I put together a dashboard of a few bands <a href="typhoon_dash.html">here</a>.
+         <br />
      </div>
 <!-- 
      <div data-viz-type="plot.xyz" xdata="http://ec2-54-200-79-78.us-west-2.compute.amazonaws.com/data/MOD021KM.A2013311.1345.005.NRT.nc/Longitude[0:406,0:271]" xmask="[100000002004087730000]" xlabel="lon" ydata="http://ec2-54-200-79-78.us-west-2.compute.amazonaws.com/data/MOD021KM.A2013311.1345.005.NRT.nc/Latitude[0:406,0:271]" ylabel="lat" zdata="http://ec2-54-200-79-78.us-west-2.compute.amazonaws.com/data/MOD021KM.A2013311.1345.005.NRT.nc/EV_1KM_RefSB[1:2,0:2030:5,0:1354:5]" zmask="[-32767,-1]" zlabel="MOD021KM.A2013311.1345.005.NRT.nc/EV_1KM_RefSB, band 9" class="widgetxyz" format="flat" colorbar="http://scifari.org/colortable/matplotlib-1.2.1/rainbow/64[]?output=json"></div>
